@@ -1,0 +1,11 @@
+<!-- This displays the details of each task-->
+
+<div *ngIf="task">
+    <h2>{{task.title}} Details</h2>
+    <div>ID: {{task.id}}</div>
+    <div>
+        <label>Title: 
+            <input [(ngModel)]="task.title" placeholder="Task title"/>
+        </label>
+    </div>
+</div>
